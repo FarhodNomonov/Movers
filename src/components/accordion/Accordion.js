@@ -53,13 +53,13 @@ function Accordion() {
           <div className="wrapper_accordion">
             <div
               onClick={() => close(index)}
-              className="  mt-1  cursor-pointer  py-2 px-5  text-black bg-[#0061cc1a] text-white flex justify-between"
+              className="  mt-1  cursor-pointer  py-2 px-5  bg-[#0061cc1a] text-white flex justify-between"
             >
-              <h3 className=" ">{item?.title}</h3>
-              <span className="title_scg">svg</span>
+              <h3 className="text-[#2B2B2B]">{item?.title}</h3>
+              <span className="title_scg ">svg</span>
             </div>
             {openAccordion === index ? (
-              <p className=" px-5 py-3 ">{item?.description}</p>
+              <p className="text-[#2B2B2B] px-5 py-3 ">{item?.description}</p>
             ) : null}
           </div>
         </>

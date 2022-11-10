@@ -5,6 +5,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -30,7 +31,7 @@
 .card_item {
   width: 168px;
   height: 204px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 18px 60px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
@@ -67,3 +68,19 @@
   text-align: center;
   color: #28438e;
 }
+
+/*  all page titles start */
+.wrapper_title {
+  position: relative;
+}
+
+.title_pages::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 150px;
+  height: 2px;
+  background-color: #ffce45;
+}
+/*  all page titles end */

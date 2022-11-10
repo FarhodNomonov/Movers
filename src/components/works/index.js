@@ -2,6 +2,8 @@ import React from "react";
 import bgImg from "../../assets/images/Vector.png";
 import bgImgRight from "../../assets/images/Vector (2).png";
 import BannerImg from "../../assets/images/banner-img.png";
+import BannerImg1 from "../../assets/images/Ellipse 425.png";
+import { Phone } from "../../assets/svg";
 
 function Works() {
   const backgroundImageStyle = {
@@ -29,7 +31,7 @@ function Works() {
       <div className="w-full overflow-hidden relative">
         <div className="text-white" style={backgroundImageStyle2}>
           <img
-            src={BannerImg}
+            src={BannerImg1}
             alt="BannerImg"
             className="cover right-1/4"
             style={{
@@ -71,6 +73,11 @@ function Works() {
             <a href="#">От 200 рублей</a>
           </div>
         </div>
+      </div>
+      <div className="faqs" style={{width: "30vw", border: "1px solid red", position:"absolute", top: "22vw", left: "4vw"}}>
+        <h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
+        <p>Закажите обратный звонок, диспетчер перезвонит вам в течении 5 минут.</p>
+          <button><Phone />Телефон</button>
       </div>
     </div>
   );

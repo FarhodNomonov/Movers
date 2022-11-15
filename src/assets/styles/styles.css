@@ -85,11 +85,13 @@
 }
 /*  all page titles end */
 
-
-
-.bg__for__header{
+.bg__for__header {
   background-image: url("../images/frmaes.svg");
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.focus_inp:focus ~ label {
+  display: none;
 }

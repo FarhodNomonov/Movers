@@ -8,6 +8,7 @@ import Cards from "../cards/Cards";
 import Moving from "./../moving-services/Moving";
 import Move from "../move";
 import MoveSlider from "../moveSlider";
+import Footer from "../footer/Footer";
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <MoveSlider />
       <Moving />
       <Move />
+      <Footer />
     </div>
   );
 }

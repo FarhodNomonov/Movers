@@ -64,7 +64,7 @@ function Works() {
             Закажите обратный звонок, диспетчер перезвонит вам в течении 5
             минут.
           </p>
-          <div className="w-full relative">
+          <div className="w-full relative mt-5">
             <input
               ref={callRef}
               type="text"
@@ -80,6 +80,12 @@ function Works() {
               <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
               Телефон
             </label>
+            <button
+              type="button"
+              class="text-white mt-3 ml-6 py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-[340px] p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Заказать звонок
+            </button>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function Move() {
         </p>
       </div>
       <div>
-        <img src={Mover} />
+        <img src={Mover} alt="..." />
       </div>
     </div>
   );

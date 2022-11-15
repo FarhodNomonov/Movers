@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../assets/images/man2.png";
-import img2 from "../../assets/images/man3.png";
-import img3 from "../../assets/images/man4.png";
+// import img1 from "../../assets/images/man2.png";
+// import img2 from "../../assets/images/man3.png";
+// import img3 from "../../assets/images/man4.png";
 import img4 from "../../assets/images/manss.png";
 
 const Cards = () => {

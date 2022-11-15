@@ -1,9 +1,9 @@
 import React from "react";
-import bgImg from "../../assets/images/Vector.png";
-import bgImgRight from "../../assets/images/Vector (2).png";
-import BannerImg from "../../assets/images/banner-img.png";
-import BannerImg1 from "../../assets/images/Ellipse 425.png";
-import { Phone } from "../../assets/svg";
+// import bgImg from "../../assets/images/Vector.png";
+// import bgImgRight from "../../assets/images/Vector (2).png";
+// import BannerImg from "../../assets/images/banner-img.png";
+// import BannerImg1 from "../../assets/images/Ellipse 425.png";
+// import { Phone } from "../../assets/svg";
 
 function Works() {
   return (

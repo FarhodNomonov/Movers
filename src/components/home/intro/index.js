@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Intro() {
   return (
@@ -10,23 +11,22 @@ function Intro() {
         >
           <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
             <li>
-              <a href="#">Главная</a>
+              <Link to="/">Главная</Link>
             </li>
             <li>
-              <a href="#">Цены</a>
+              <Link to="/">Цены</Link>
             </li>
             <li>
-              <a href="#">Услуги </a>
+              <Link to="/">Услуги </Link>
             </li>
             <li>
-              <a href="#">Вопросы-ответы</a>
+              <Link to="/">Вопросы-ответы</Link>
             </li>
             <li>
-              <a href="#">Отзывы</a>
+              <Link to="/">Отзывы</Link>
             </li>
-
             <li>
-              <a href="#">О нас</a>
+              <Link to="/">О нас</Link>
             </li>
           </ul>
         </div>

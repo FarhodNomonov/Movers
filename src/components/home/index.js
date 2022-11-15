@@ -21,7 +21,6 @@ function Home() {
       <MoveSlider />
       <Moving />
       <Move />
-      
     </div>
   );
 }

@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import MovingImg from "../../assets/images/person.png";
 import user from "../../assets/images/user.png";
 import call from "../../assets/images/Calling.png";
 function Moving() {
+  const userRef = useRef(null);
+  const callRef = useRef(null);
+  const userIcon = () => {
+    userRef.current.focus();
+  };
+  const callIcon = () => {
+    callRef.current.focus();
+  };
   return (
     <div className="w-full  bg-[#28438E]">
       <div className="md:container md:mx-auto flex p-12">
@@ -13,14 +21,16 @@ function Moving() {
           <div className="flex gap-5 ">
             <div className="w-full relative">
               <input
+                ref={userRef}
                 type="text"
                 id="first_name"
                 className=" focus_inp  outline-0 py-4  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  bg-transparent dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               />
               <label
+                onClick={userIcon}
                 htmlFor=""
-                className="text-white flex   absolute top-[12px]  left-[12px] items-center"
+                className="text-white flex hover:cursor-text  absolute top-[12px]  left-[12px] items-center"
               >
                 <img src={user} className="w-[28px] h-[28px] mr-[4px]" alt="" />
                 Ваше имя
@@ -28,14 +38,16 @@ function Moving() {
             </div>
             <div className="w-full relative">
               <input
+                ref={callRef}
                 type="text"
                 id="last_name"
                 className="focus_inp outline-0 py-4  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  bg-transparent dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               />
               <label
-                htmlFor=""
-                className="text-white flex    absolute top-[12px]  left-[12px] items-center "
+                onClick={callIcon}
+                htmlFor="last_name"
+                className="text-white flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
               >
                 <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
                 Телефон
@@ -43,7 +55,7 @@ function Moving() {
             </div>
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              class="text-white py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               Заказать звонок
             </button>

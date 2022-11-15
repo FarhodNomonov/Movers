@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Line } from "../../assets/icon";
 import BannerImg from "../../assets/images/banner-img.png";
 import call from "../../assets/images/Call.png";
 
 function Works() {
+  const callRef = useRef(null);
+  const userIcon = () => {
+    callRef.current.focus();
+  };
   return (
     <div className="container mx-auto bg__for__header">
       <div className="w-100 relative">
@@ -62,14 +66,16 @@ function Works() {
           </p>
           <div className="w-full relative">
             <input
+              ref={callRef}
               type="text"
-              id="last_name"
-              className="focus_inp outline-0 py-4  border border-[#0061CC] mt-[18px] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  bg-transparent dark:border-[#0061CC] dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              required
+              className="focus_inp form-control block w-full px-3 py-4 text-base font-normal  text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300  rounded-lg  transition ease-in-out  m-0 focus:text-gray-700 focus:bg-white focus:border-[#0061CC] focus:outline-none "
+              id="exampleText0"
             />
+
             <label
+              onClick={userIcon}
               htmlFor=""
-              className="text-[#0061CC] flex    absolute top-[12px]  left-[12px] items-center "
+              className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
             >
               <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
               Телефон

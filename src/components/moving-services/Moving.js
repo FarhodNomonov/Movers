@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import MovingImg from "../../assets/images/person.png";
+import MovingImg from "../../assets/images/personW.png";
 import user from "../../assets/images/user.png";
 import call from "../../assets/images/Calling.png";
 function Moving() {

@@ -4,6 +4,8 @@ import Intro from "./intro";
 import Works from "../works";
 import Service from "../service/Service";
 import Accordion from "../accordion/Accordion";
+import Cards from "../cards/Cards";
+
 
 function Home() {
   return (
@@ -12,6 +14,7 @@ function Home() {
       <Intro />
       <Works />
       <Service />
+      <Cards />
       <Accordion />
     </div>
   );

@@ -4,8 +4,9 @@ import Logo from "../../../assets/images/Logo.png";
 
 function Header() {
   return (
-    <div className="header bg-[#28438E] flex items-center justify-between p-5">
-      <div className="header_logo flex items-center ">
+    <div className="header bg-[#28438E]  p-1">
+       <div className="md:container md:mx-auto flex items-center justify-between">
+       <div className="header_logo flex items-center ">
         <div className="logo_img">
           <img src={Logo} alt="..." />
         </div>
@@ -36,6 +37,7 @@ function Header() {
           </div>
         </div>
       </div>
+       </div>
     </div>
   );
 }

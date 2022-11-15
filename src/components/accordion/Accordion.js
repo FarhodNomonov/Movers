@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AccordionTop } from "../../assets/icon";
 function Accordion() {
   const [openAccordion, setOpenAccordion] = useState(null);
 
@@ -8,30 +9,35 @@ function Accordion() {
       title: " А вы можете меня встретить с вокзала/аэропорта?",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus facere corrupti. Dolorum recusandae quo commodi velit eos perferendis odit ducimus incidunt, quia voluptas provident dolores illo tenetur sunt, quidem iure corporis maiores? Iusto incidunt dolorem et ab, tempore molestiae aliquam adipisci. Ducimus, delectus cumque fugit omnis perferendis asperiores rem! Voluptates",
+      icon: <AccordionTop />,
     },
     {
       id: 2,
       title: " А вы можете меня встретить с вокзала/аэропорта?",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus facere corrupti. Dolorum recusandae quo commodi velit eos perferendis odit ducimus incidunt, quia voluptas provident dolores illo tenetur sunt, quidem iure corporis maiores? Iusto incidunt dolorem et ab, tempore molestiae aliquam adipisci. Ducimus, delectus cumque fugit omnis perferendis asperiores rem! Voluptates",
+      icon: <AccordionTop />,
     },
     {
       id: 3,
       title: " А вы можете меня встретить с вокзала/аэропорта?",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus facere corrupti. Dolorum recusandae quo commodi velit eos perferendis odit ducimus incidunt, quia voluptas provident dolores illo tenetur sunt, quidem iure corporis maiores? Iusto incidunt dolorem et ab, tempore molestiae aliquam adipisci. Ducimus, delectus cumque fugit omnis perferendis asperiores rem! Voluptates",
+      icon: <AccordionTop />,
     },
     {
       id: 4,
       title: " А вы можете меня встретить с вокзала/аэропорта?",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus facere corrupti. Dolorum recusandae quo commodi velit eos perferendis odit ducimus incidunt, quia voluptas provident dolores illo tenetur sunt, quidem iure corporis maiores? Iusto incidunt dolorem et ab, tempore molestiae aliquam adipisci. Ducimus, delectus cumque fugit omnis perferendis asperiores rem! Voluptates",
+      icon: <AccordionTop />,
     },
     {
       id: 5,
       title: " А вы можете меня встретить с вокзала/аэропорта?",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora necessitatibus facere corrupti. Dolorum recusandae quo commodi velit eos perferendis odit ducimus incidunt, quia voluptas provident dolores illo tenetur sunt, quidem iure corporis maiores? Iusto incidunt dolorem et ab, tempore molestiae aliquam adipisci. Ducimus, delectus cumque fugit omnis perferendis asperiores rem! Voluptates",
+      icon: <AccordionTop />,
     },
   ];
   const close = (index) => {
@@ -56,7 +62,7 @@ function Accordion() {
               className="  mt-1  cursor-pointer  py-2 px-5  bg-[#0061cc1a] text-white flex justify-between"
             >
               <h3 className="text-[#2B2B2B]">{item?.title}</h3>
-              <span className="title_scg ">svg</span>
+              <span className="title_scg ">{item?.icon}</span>
             </div>
             {openAccordion === index ? (
               <p className="text-[#2B2B2B] px-5 py-3 ">{item?.description}</p>

@@ -55,7 +55,7 @@ function Accordion() {
         </h2>
       </div>
       {accordion_data?.map((item, index) => (
-        <>
+        <React.Fragment key={index}>
           <div className="wrapper_accordion">
             <div
               onClick={() => close(index)}
@@ -68,7 +68,7 @@ function Accordion() {
               <p className="text-[#2B2B2B] px-5 py-3 ">{item?.description}</p>
             ) : null}
           </div>
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

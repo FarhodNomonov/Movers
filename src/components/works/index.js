@@ -1,12 +1,21 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Line } from "../../assets/icon";
 import BannerImg from "../../assets/images/banner-img.png";
 import call from "../../assets/images/Call.png";
 
 function Works() {
+  const [userData, setUserData] = useState({
+    phone: "",
+  });
   const callRef = useRef(null);
   const userIcon = () => {
     callRef.current.focus();
+  };
+  const inputHandle = (e) => {
+    setUserData(() => ({
+      ...userData,
+      [e.target.name]: e.target.value,
+    }));
   };
   return (
     <div className="container mx-auto bg__for__header">
@@ -68,13 +77,15 @@ function Works() {
             <input
               ref={callRef}
               type="text"
+              name="phone"
+              onChange={inputHandle}
               className="focus_inp form-control block w-full px-3 py-4 text-base font-normal  text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300  rounded-lg  transition ease-in-out  m-0 focus:text-gray-700 focus:bg-white focus:border-[#0061CC] focus:outline-none "
-              id="exampleText0"
             />
 
             <label
               onClick={userIcon}
-              htmlFor=""
+              htmlFor="phone"
+              style={userData.phone.length > 0 ? { display: "none" } : null}
               className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
             >
               <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
@@ -82,7 +93,7 @@ function Works() {
             </label>
             <button
               type="button"
-              class="font-medium text-[22px] text-white mt-3 ml-6 py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-[340px] p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="font-medium text-[22px] text-white mt-3 ml-6 py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-[340px] p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               Заказать звонок
             </button>

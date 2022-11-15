@@ -1,8 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import MovingImg from "../../assets/images/person.png";
 import user from "../../assets/images/user.png";
 import call from "../../assets/images/Calling.png";
 function Moving() {
+  const [userData, setUserData] = useState({
+    first_name: "",
+    phone: "",
+  });
   const userRef = useRef(null);
   const callRef = useRef(null);
   const userIcon = () => {
@@ -10,6 +14,12 @@ function Moving() {
   };
   const callIcon = () => {
     callRef.current.focus();
+  };
+  const inputHandle = (e) => {
+    setUserData(() => ({
+      ...userData,
+      [e.target.name]: e.target.value,
+    }));
   };
   return (
     <div className="w-full  bg-[#28438E]">
@@ -22,14 +32,17 @@ function Moving() {
             <div className="w-full relative">
               <input
                 ref={userRef}
+                name="first_name"
                 type="text"
                 id="first_name"
+                onChange={inputHandle}
                 className=" focus_inp  outline-0 py-4  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  bg-transparent dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               />
               <label
+                style={userData.first_name.length > 0 ? { display: "none" } : null}
                 onClick={userIcon}
-                htmlFor=""
+                htmlFor="first_name"
                 className="text-white flex hover:cursor-text  absolute top-[12px]  left-[12px] items-center"
               >
                 <img src={user} className="w-[28px] h-[28px] mr-[4px]" alt="" />
@@ -40,13 +53,16 @@ function Moving() {
               <input
                 ref={callRef}
                 type="text"
-                id="last_name"
+                name="phone"
+                id="phone"
+                onChange={inputHandle}
                 className="focus_inp outline-0 py-4  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  bg-transparent dark:border-white dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               />
               <label
                 onClick={callIcon}
-                htmlFor="last_name"
+                htmlFor="phone"
+                style={userData.phone.length > 0 ? { display: "none" } : null}
                 className="text-white flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
               >
                 <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
@@ -55,7 +71,7 @@ function Moving() {
             </div>
             <button
               type="button"
-              class="text-white font-medium text-[22px] py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="text-white font-medium text-[22px] py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               Заказать звонок
             </button>

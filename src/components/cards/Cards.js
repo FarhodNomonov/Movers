@@ -10,7 +10,7 @@ const Cards = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-4 gap-4  ">
           <div className=" h-60 rounded-[5px] relative p-3 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
-            <h1>ГРУЗЧИКИ</h1>
+            <h1 className="font-bold">ГРУЗЧИКИ</h1>
             <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-20 rounded-[5px]">
               <img
                 className="skew-x-6 relative left-20 w-100 h-30 -top-6"
@@ -20,7 +20,7 @@ const Cards = () => {
             </div>
           </div>
           <div className=" h-60 rounded-[5px] relative p-3 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
-            <h1>ГРУЗЧИКИ</h1>
+            <h1 className="font-bold">ГРУЗЧИКИ</h1>
             <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-20 rounded-[5px]">
               <img
                 className="skew-x-6 relative left-20 w-100 h-30 -top-6"
@@ -30,7 +30,7 @@ const Cards = () => {
             </div>
           </div>
           <div className=" h-60 rounded-[5px] relative p-3 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
-            <h1>ГРУЗЧИКИ</h1>
+            <h1 className="font-bold">ГРУЗЧИКИ</h1>
             <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-20 rounded-[5px]">
               <img
                 className="skew-x-6 relative left-20 w-100 h-30 -top-6"
@@ -40,7 +40,7 @@ const Cards = () => {
             </div>
           </div>
           <div className=" h-60 rounded-[5px] relative p-3 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
-            <h1>ГРУЗЧИКИ</h1>
+            <h1 className="font-bold">ГРУЗЧИКИ</h1>
             <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-20 rounded-[5px]">
               <img
                 className="skew-x-6 relative left-20 w-100 h-30 -top-6"

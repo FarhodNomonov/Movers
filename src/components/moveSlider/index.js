@@ -1,109 +1,104 @@
 import React from "react";
+import Slider from "react-slick";
+import UserPng from '../../assets/images/user (2).png';
+import StarPng from '../../assets/images/Star 1.png';
+import '../service/Service.css';
 
 function MoveSlider() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  };
+
   return (
-    <div className="md:container md:mx-auto p-12">
-      <div id="controls-carousel" className="relative" data-carousel="static">
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
-            data-carousel-item
-          >
-            <img
-              src="/docs/images/carousel/carousel-1.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+    <div className="md:container md:mx-auto p-6 moveSlider">
+      <div className="wrapper_title">
+        <h2 className="title_pages text-[#28438E] text-bold text-base font-bold font-Inter">
+          СТОИМОСТЬ УСЛУГ
+        </h2>
+      </div>
+      {/* <div id="controls-carousel" className="relative" data-carousel="static"> */}
+      <div className="cardItem h-[28rem]">
+        <Slider {...settings}>
+          <div className="cardSlider">
+            <div className="cardSlider__titte flex justify-start items-center">
+              <div className="cardSlider__img">
+                <img src={UserPng} alt="UserPng" />
+              </div>
+              <div className="cardSlider__text">
+                <p>Дмитрий Филимонов</p>
+                <div className="stars flex justify-start items-center">
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                </div>
+              </div>
+            </div>
+            <div className="cardSlider__deck">
+              Дмитрий Филимонов Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse{" "}
+            </div>
           </div>
-          <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
-            data-carousel-item="active"
-          >
-            <img
-              src="/docs/images/carousel/carousel-2.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+          <div className="cardSlider">
+            <div className="cardSlider__titte flex justify-start items-center">
+              <div className="cardSlider__img">
+                <img src={UserPng} alt="UserPng" />
+              </div>
+              <div className="cardSlider__text">
+                <p>Дмитрий Филимонов</p>
+                <div className="stars flex justify-start items-center">
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                </div>
+              </div>
+            </div>
+            <div className="cardSlider__deck">
+              Дмитрий Филимонов Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse{" "}
+            </div>
           </div>
-          <div
-            className="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
-            data-carousel-item
-          >
-            <img
-              src="/docs/images/carousel/carousel-3.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
+          <div className="cardSlider">
+            <div className="cardSlider__titte flex justify-start items-center">
+              <div className="cardSlider__img">
+                <img src={UserPng} alt="UserPng" />
+              </div>
+              <div className="cardSlider__text">
+                <p>Дмитрий Филимонов</p>
+                <div className="stars flex justify-start items-center">
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                  <img src={StarPng} alt="StarPng" />
+                </div>
+              </div>
+            </div>
+            <div className="cardSlider__deck">
+              Дмитрий Филимонов Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse{" "}
+            </div>
           </div>
-          <div
-            className="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
-            data-carousel-item
-          >
-            <img
-              src="/docs/images/carousel/carousel-4.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <div
-            className="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
-            data-carousel-item
-          >
-            <img
-              src="/docs/images/carousel/carousel-5.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          type="button"
-          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              className="w-6 h-6 text-white dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              aria-hidden="true"
-              className="w-6 h-6 text-white dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
+        </Slider>
       </div>
     </div>
   );

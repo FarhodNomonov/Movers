@@ -25,6 +25,7 @@ function Home() {
       <Footer />
       <MoveSlider />
       {/* <Moving /> */}
+      
       {/* <Move /> */}
       {/* <Footer /> */}
     </div>

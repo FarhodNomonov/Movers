@@ -71,9 +71,6 @@
 }
 
 /*  all page titles start */
-.wrapper_title {
-  position: relative;
-}
 
 .title_pages::after {
   content: "";

@@ -8,6 +8,11 @@ const Cards = () => {
   return (
     <div>
       <div className="max-w-[1536px] w-full mx-auto">
+        <div className="wrapper_title  ml-12">
+          <h2 className="title_pages text-[#28438E] my-3 mb-4 text-bold text-base font-bold font-Inter">
+            НАШИ УСЛУГИ
+          </h2>
+        </div>
         <div className=" flex flex-wrap  sm:w-[600px] justify-around  mx-auto   ">
           <div className=" w-[300px] min-w-[300px] mx-auto sm:w-[500px] sm:min-w-[500px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
             <h1 className="font-bold md:text-lg">ГРУЗЧИКИ</h1>

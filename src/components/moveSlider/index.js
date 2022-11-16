@@ -1,32 +1,31 @@
 import React from "react";
 import Slider from "react-slick";
-import UserPng from '../../assets/images/user (2).png';
-import StarPng from '../../assets/images/Star 1.png';
-import '../service/Service.css';
+import UserPng from "../../assets/images/user (2).png";
+import StarPng from "../../assets/images/Star 1.png";
+import "../service/Service.css";
 
 function MoveSlider() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: window.innerWidth > 768 ? 2 : 1,
     slidesToScroll: 2,
   };
 
   return (
-    <div className="md:container md:mx-auto p-6 moveSlider">
-      <div className="wrapper_title">
-        <h2 className="title_pages text-[#28438E] text-bold text-base font-bold font-Inter">
-          СТОИМОСТЬ УСЛУГ
+    <div className="max-w-[1536px]   mx-auto p-6 moveSlider">
+      <div className="wrapper_title ml-6">
+        <h2 className="title_pages text-[#28438E] my-3  mb-4 text-bold text-base font-bold font-Inter">
+          ОТЗЫВЫ О НАШИХ ГРУЗЧИКАХ
         </h2>
       </div>
-      {/* <div id="controls-carousel" className="relative" data-carousel="static"> */}
       <div className="cardItem h-[28rem]">
         <Slider {...settings}>
           <div className="cardSlider">
             <div className="cardSlider__titte flex justify-start items-center">
-              <div className="cardSlider__img">
-                <img src={UserPng} alt="UserPng" />
+              <div className="min-w-24  w-24 min-h-24  h-24">
+                <img className="rounded-full" src={UserPng} alt="UserPng" />
               </div>
               <div className="cardSlider__text">
                 <p>Дмитрий Филимонов</p>
@@ -50,8 +49,8 @@ function MoveSlider() {
           </div>
           <div className="cardSlider">
             <div className="cardSlider__titte flex justify-start items-center">
-              <div className="cardSlider__img">
-                <img src={UserPng} alt="UserPng" />
+              <div className="min-w-24  w-24 min-h-24  h-24">
+                <img className="rounded-full" src={UserPng} alt="UserPng" />
               </div>
               <div className="cardSlider__text">
                 <p>Дмитрий Филимонов</p>
@@ -75,8 +74,8 @@ function MoveSlider() {
           </div>
           <div className="cardSlider">
             <div className="cardSlider__titte flex justify-start items-center">
-              <div className="cardSlider__img">
-                <img src={UserPng} alt="UserPng" />
+              <div className="min-w-24  w-24 min-h-24  h-24">
+                <img className="rounded-full" src={UserPng} alt="UserPng" />
               </div>
               <div className="cardSlider__text">
                 <p>Дмитрий Филимонов</p>

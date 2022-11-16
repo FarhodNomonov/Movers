@@ -71,11 +71,13 @@
 }
 
 /*  all page titles start */
-
+.wrapper_title {
+  position: relative !important;
+}
 .title_pages::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 0 !important;
   bottom: -2px;
   width: 150px;
   height: 2px;

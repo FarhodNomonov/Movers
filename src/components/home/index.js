@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       <Header />
-      {/* <Intro /> */}
+      <Intro />
       {/* <Works /> */}
       {/* <Service /> */}
       {/* <Cards /> */}

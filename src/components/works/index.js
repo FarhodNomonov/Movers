@@ -131,10 +131,9 @@ function Works() {
               onChange={inputHandle}
               className="focus_inp form-control block w-full px-3 py-4 text-base font-normal  text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300  rounded-lg  transition ease-in-out  m-0 focus:text-gray-700 focus:bg-white focus:border-[#0061CC] focus:outline-none "
             />
-
-            <label
+            <label 
               onClick={userIcon}
-              htmlFor="phone"
+              htmlFor=""
               style={userData.phone.length > 0 ? { display: "none" } : null}
               className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
             >

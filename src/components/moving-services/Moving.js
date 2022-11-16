@@ -22,13 +22,13 @@ function Moving() {
     }));
   };
   return (
-    <div className="w-full  bg-[#28438E]">
-      <div className="md:container md:mx-auto flex p-12">
-        <div className="w-9/12 ">
-          <h1 className="text-[70px] w-full font-extrabold text-white text-bold">
+    <div className="w-full h-80 md:h-max p-12 sm:min-w-[610px]    bg-[#28438E]">
+      <div className="max-w-[1536px] relative md:flex-col   mx-auto flex ">
+        <div className="h-max ">
+          <h1 className="text-5xl w-full font-extrabold text-white text-bold">
             Рассчитаем стоимость услуг грузчиков в Москве
           </h1>
-          <div className="flex gap-5 ">
+          <div className="flex gap-5  mt-4 md:flex-col  ">
             <div className="w-full relative">
               <input
                 ref={userRef}
@@ -40,7 +40,9 @@ function Moving() {
                 required
               />
               <label
-                style={userData.first_name.length > 0 ? { display: "none" } : null}
+                style={
+                  userData.first_name.length > 0 ? { display: "none" } : null
+                }
                 onClick={userIcon}
                 htmlFor="first_name"
                 className="text-white flex hover:cursor-text  absolute top-[12px]  left-[12px] items-center"
@@ -77,8 +79,8 @@ function Moving() {
             </button>
           </div>
         </div>
-        <div className="moving_images mt-[-120px]">
-          <img className="" src={MovingImg} alt="..." />
+        <div className=" md:w-[135vw] md:hidden   -mt-36">
+          <img className="w-max" src={MovingImg} alt="..." />
         </div>
       </div>
     </div>

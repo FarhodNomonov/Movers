@@ -4,8 +4,8 @@ import Logo from "../../../assets/images/Logo.png";
 
 function Header() {
   return (
-    <div className="header bg-[#28438E] min-w-[576px]  p-1">
-      <div className="container mx-auto w-[95%] flex items-center justify-between">
+    <div className="header bg-[#28438E] min-w-[590px]  p-1">
+      <div className="max-w-[1536px]  mx-auto w-[95%] flex items-center justify-between">
         <div className="header_logo flex items-center ">
           <div className=" md:min-w-[60px] md:max-w-[60px]">
             <img src={Logo} alt="..." />

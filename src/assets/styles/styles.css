@@ -96,3 +96,9 @@
 .focus_inp:focus ~ label {
   display: none;
 }
+@media (max-width: 768px) {
+  .bg__for__header {
+    background-image: url("../images/Vector.png");
+    background-size: 500px;
+  }
+}

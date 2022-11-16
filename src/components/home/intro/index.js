@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Intro() {
   return (
     <nav className="px-2 w-[95%] mx-auto bg-white border-gray-200 ">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
+      <div className="max-w-[1536px]  flex flex-wrap justify-between items-center mx-auto">
         <div className="    " id="navbar-multi-level">
           <ul className="flex           font-medium">
             <li className="p-5 hover:text-[#FFCE45] transition-all duration-[0.2s]  ">

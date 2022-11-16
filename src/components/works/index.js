@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Line } from "../../assets/icon";
 import BannerImg from "../../assets/images/banner-img.png";
 import call from "../../assets/images/Call.png";
-
+import Slider from "react-slick";
 function Works() {
   const [userData, setUserData] = useState({
     phone: "",
@@ -17,14 +17,23 @@ function Works() {
       [e.target.name]: e.target.value,
     }));
   };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  };
+
   return (
-    <div className="container mx-auto bg__for__header">
+    <div className=" max-w-[1536px] sm:min-w-[536px] mx-auto bg__for__header">
       <div className="w-100 relative">
-        <h1 className="absolute top-5 left-5  text-6xl font-bold text-white  ">
+        <h1 className="absolute top-5 left-5 md:text-4xl md:top-10 text-6xl font-bold text-white  ">
           ПоРаботаем!
         </h1>
 
-        <div className="absolute top-[220px] flex left-[150px]">
+        <div className="absolute top-[220px] flex left-[150px] md:hidden">
           <div className=" gap-4 ml-[10px]  ">
             <div className="w-[166px] rounded-[10px]  shadow shadow-2xl text-center flex items-center flex-col">
               <img src={BannerImg} alt="" />
@@ -61,6 +70,47 @@ function Works() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="w-[400px] absalute hidden md:block   pt-[220px] ml-[18%]">
+          <Slider {...settings}>
+            <div className=" gap-4 ml-[10px]  ">
+              <div className="w-[166px] rounded-[10px]  shadow shadow-2xl text-center flex items-center flex-col">
+                <img src={BannerImg} alt="" />
+                <p className="font-medium my-[5px] px-[5px] text-[15px]">
+                  все виды погрузочно-разгрузочных работ
+                </p>
+                <Line />
+                <p className="text-[#28438E] font-bold pb-[20px]">
+                  От 200 рублей
+                </p>
+              </div>
+            </div>
+            <div className=" gap-4 ml-[10px] ">
+              <div className="w-[166px] rounded-[10px]  shadow shadow-2xl text-center flex items-center flex-col">
+                <img src={BannerImg} alt="" />
+                <p className="font-medium my-[5px] px-[5px] text-[15px]">
+                  все виды погрузочно-разгрузочных работ
+                </p>
+                <Line />
+                <p className="text-[#28438E] font-bold pb-[20px]">
+                  От 200 рублей
+                </p>
+              </div>
+            </div>
+            <div className=" gap-4 ml-[10px] ">
+              <div className="w-[166px] rounded-[10px]  shadow shadow-2xl text-center flex items-center flex-col">
+                <img src={BannerImg} alt="" />
+                <p className="font-medium my-[5px] px-[5px] text-[15px]">
+                  все виды погрузочно-разгрузочных работ
+                </p>
+                <Line />
+                <p className="text-[#28438E] font-bold pb-[20px]">
+                  От 200 рублей
+                </p>
+              </div>
+            </div>
+          </Slider>
         </div>
 
         <div className=" top-[480px] left-[110px] absolute ">

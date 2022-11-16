@@ -19,10 +19,10 @@ function Home() {
       <Service />
       <Cards />
       <Accordion />
-      {/* <MoveSlider /> */}
-      {/* <Moving /> */}
-      {/* <Move /> */}
-      {/* <Footer /> */}
+      <MoveSlider />
+      <Moving />
+      <Move />
+      <Footer />
     </div>
   );
 }

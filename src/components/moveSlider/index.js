@@ -10,7 +10,7 @@ function MoveSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: window.innerWidth > 768 ? 2 : 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
   };
 
   return (

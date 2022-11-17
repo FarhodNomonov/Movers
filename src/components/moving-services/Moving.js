@@ -22,13 +22,13 @@ function Moving() {
     }));
   };
   return (
-    <div className="w-full h-80 md:h-max p-12 sm:min-w-[610px]    bg-[#28438E]">
+    <div className="w-full h-80 md:h-max p-12 sm:min-w-[610px] relative bg-[#28438E]">
       <div className="max-w-[1536px] relative md:flex-col   mx-auto flex ">
-        <div className="h-max ">
+        <div className="h-max w-[70%] md:w-full ">
           <h1 className="text-5xl w-full font-extrabold text-white text-bold">
             Рассчитаем стоимость услуг грузчиков в Москве
           </h1>
-          <div className="flex gap-5  mt-4 md:flex-col  ">
+          <div className="flex gap-5  mt-4 md:flex-col">
             <div className="w-full relative">
               <input
                 ref={userRef}
@@ -79,7 +79,7 @@ function Moving() {
             </button>
           </div>
         </div>
-        <div className=" md:w-[135vw] md:hidden   -mt-36">
+        <div className="md:w-[135vw] md:hidden absolute top-[-24px] right-0 -mt-36">
           <img className="w-max" src={MovingImg} alt="..." />
         </div>
       </div>

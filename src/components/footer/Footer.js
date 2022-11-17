@@ -4,7 +4,7 @@ import logo from "../../assets/images/FooterLogo.png";
 
 function Footer() {
   return (
-    <div className="w-full p-[20px] bg-[#28438E] sm:min-w-[610px]  ">
+    <div className="w-full p-[20px] bg-[#28438E] sm:min-w-[610px] md:px-12 ">
       <div className=" max-w-[1536px] mx-auto flex justify-around  md:flex-col md:justify-center">
         <div className="text-18 flex text-white font-bold md:items-center  md:w-full md:flex-col md:justify-center">
           <img src={logo} className="w-24 h-24  md:w-30 md:h-30" alt="" />
@@ -16,8 +16,8 @@ function Footer() {
             является офертой.
           </p>
         </div>
-        <div className="md:w-full md:ml-0 md:pt-6 ml-[104px] ">
-          <div className="header_technical_support flex flex-col">
+        <div className="md:w-full md:ml-0  ml-[104px]  ">
+          <div className="header_technical_support flex flex-col md:justify-between md:flex-row  ">
             <div className="header_connection flex items-center  gap-3">
               <div className="header_connection_svg">
                 <Tell />

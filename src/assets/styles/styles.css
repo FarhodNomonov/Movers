@@ -2,6 +2,7 @@
   font-family: "Mons";
   src: url(../fonts/inter/static/Inter-Medium.ttf);
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,63 +20,13 @@
   scroll-behavior: smooth;
 }
 
-.card {
-  /* border: 1px solid red; */
-  width: 40vw;
-  height: 15vw;
-  position: absolute;
-  left: 9vw;
-  top: 9vw;
-  /* display: flex; */
-}
-
-.card_item {
-  width: 168px;
-  height: 204px;
-  background: #ffffff;
-  box-shadow: 0px 18px 60px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-}
-
-.card_item__header {
-  width: 166px;
-  height: 92px;
-}
-
-.card_item__header img {
-  width: 100%;
-}
-
-.card_item__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card_item__body p {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  margin: 10px 0;
-  text-align: center;
-  color: #2b2b2b;
-  width: 164.52px;
-}
-
-.card_item__body a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 120%;
-  text-align: center;
-  color: #28438e;
-}
-
 /*  all page titles start */
 .wrapper_title {
   position: relative !important;
   width: max-content;
   cursor: context-menu;
 }
+
 .title_pages::after {
   content: "";
   position: absolute;
@@ -86,10 +37,12 @@
   height: 2px;
   background-color: #ffce45;
 }
+
 .wrapper_title:hover .title_pages::after {
   width: 150px;
   cursor: context-menu;
 }
+
 /*  all page titles end */
 
 .bg__for__header {
@@ -99,9 +52,10 @@
   background-size: cover;
 }
 
-.focus_inp:focus ~ label {
+.focus_inp:focus~label {
   display: none;
 }
+
 @media (max-width: 768px) {
   .bg__for__header {
     background-image: url("../images/Vector.png");

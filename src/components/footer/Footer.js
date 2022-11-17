@@ -4,9 +4,9 @@ import logo from "../../assets/images/FooterLogo.png";
 
 function Footer() {
   return (
-    <div className="w-full p-12 bg-[#28438E] sm:min-w-[610px]  ">
+    <div className="w-full p-[20px] bg-[#28438E] sm:min-w-[610px]  ">
       <div className=" max-w-[1536px] mx-auto flex justify-around  md:flex-col md:justify-center">
-        <div className="w-1/3 text-18 flex text-white font-bold md:items-center  md:w-full md:flex-col md:justify-center">
+        <div className="text-18 flex text-white font-bold md:items-center  md:w-full md:flex-col md:justify-center">
           <img src={logo} className="w-24 h-24  md:w-30 md:h-30" alt="" />
           <span className="pl-2 text-xl">ПоРаботаем!</span>
         </div>
@@ -16,14 +16,16 @@ function Footer() {
             является офертой.
           </p>
         </div>
-        <div className="w-1/3 md:w-full md:ml-0 md:pt-6 ml-[104px] ">
-          <div className="header_technical_support  items-center justify-around flex gap-14">
+        <div className="md:w-full md:ml-0 md:pt-6 ml-[104px] ">
+          <div className="header_technical_support flex flex-col">
             <div className="header_connection flex items-center  gap-3">
               <div className="header_connection_svg">
                 <Tell />
               </div>
               <div className="header_connection_title">
-                <p className="font-bold text-base text-white text-md">ЗВОНИТЕ</p>
+                <p className="font-bold text-base text-white text-md">
+                  ЗВОНИТЕ
+                </p>
                 <span className="text-[#FFCE45] text-md">+78432126064</span>
               </div>
             </div>
@@ -32,8 +34,12 @@ function Footer() {
                 <Time />
               </div>
               <div className="header_support_title">
-                <p className="font-bold text-base text-white text-md">МЫ РАБОТАЕМ</p>
-                <p className="text-[#FFCE45] text-md">КРУГЛОСУТОЧНО. БЕЗ ВЫХОДНЫХ</p>
+                <p className="font-bold text-base text-white text-md">
+                  МЫ РАБОТАЕМ
+                </p>
+                <p className="text-[#FFCE45] text-md">
+                  КРУГЛОСУТОЧНО. БЕЗ ВЫХОДНЫХ
+                </p>
               </div>
             </div>
           </div>

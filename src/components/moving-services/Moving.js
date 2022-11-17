@@ -22,13 +22,13 @@ function Moving() {
     }));
   };
   return (
-    <div className="w-full h-80 md:h-max p-12 sm:min-w-[610px] relative bg-[#28438E]">
-      <div className="max-w-[1536px] relative md:flex-col   mx-auto flex ">
-        <div className="h-max w-[70%] md:w-full ">
-          <h1 className="text-5xl w-full font-extrabold text-white text-bold">
+    <div className="w-full md:h-max p-12 sm:min-w-[610px] relative bg-[#28438E]">
+      <div className="max-w-[1536px] relative md:flex-col mx-auto flex ">
+        <div className="h-max w-[70%] md:w-full xl:flex-col xl:flex lg:w-full">
+          <h1 className="text-5xl w-full font-extrabold text-white text-bold ">
             Рассчитаем стоимость услуг грузчиков в Москве
           </h1>
-          <div className="flex gap-5  mt-4 md:flex-col">
+          <div className="flex gap-5 lg:flex lg:flex lg:flex-col   mt-4 md:flex-col">
             <div className="w-full relative">
               <input
                 ref={userRef}
@@ -73,13 +73,13 @@ function Moving() {
             </div>
             <button
               type="button"
-              className="text-white font-medium text-[22px] py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              className="text-white font-medium text-[22px] py-[17px] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-3.8 w-full p-2.5  mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 lx:px-0"
             >
               Заказать звонок
             </button>
           </div>
         </div>
-        <div className="md:w-[135vw] md:hidden absolute top-[-24px] right-0 -mt-36">
+        <div className="md:w-[135vw] md:hidden absolute top-[40px] lg:hidden w-[300px] h-[350px] right-0 -mt-36">
           <img className="w-max" src={MovingImg} alt="..." />
         </div>
       </div>

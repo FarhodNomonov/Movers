@@ -49,7 +49,7 @@ function Accordion() {
   };
   return (
     <div className="max-w-[1536px] mx-auto p-12">
-      <div className="relative md:mb-8   ">
+      <div className="relative wrapper_title md:mb-8   ">
         <h2 className="title_pages text-[#28438E] my-3 mb-4 text-bold text-base font-bold font-Inter">
           ОТВЕЧАЕМ НА ПОПУЛЯРНЫЕ ВОПРОСЫ
         </h2>

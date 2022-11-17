@@ -73,15 +73,22 @@
 /*  all page titles start */
 .wrapper_title {
   position: relative !important;
+  width: max-content;
+  cursor: context-menu;
 }
 .title_pages::after {
   content: "";
   position: absolute;
   left: 0 !important;
   bottom: -2px;
-  width: 150px;
+  transition: linear 0.2s;
+  width: 70px;
   height: 2px;
   background-color: #ffce45;
+}
+.wrapper_title:hover .title_pages::after {
+  width: 150px;
+  cursor: context-menu;
 }
 /*  all page titles end */
 

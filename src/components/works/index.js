@@ -113,7 +113,7 @@ function Works() {
           </Slider>
         </div>
         {/*  */}
-        <div className=" top-[480px] left-[110px] smm:w-[90%] smm:mx-auto smm:items-center absolute  smm:left-[8%] justify-center smm:relative ">
+        <div className=" top-[480px] left-[110px] smm:w-[90%] smm:mx-auto smm:items-center absolute  smm:left-[8%] justify-center smm:absolute ">
           <div className="wrapper_title">
             <h2 className="title_pages text-[#28438E] my-3 mb-4 text-bold text-base font-bold font-Inter">
               ОСТАЛИСЬ ВОПРОСЫ?
@@ -123,7 +123,7 @@ function Works() {
             Закажите обратный звонок, диспетчер перезвонит вам в течении 5
             минут.
           </p>
-          <div className="w-full relative mt-5">
+          <div className="w-full smm:w-[80%] relative mt-5 smm:min-w-[85vw] smm:mx-auto smm:justify-center smm:p-0 smm:pl-10">
             <input
               ref={callRef}
               type="text"
@@ -135,7 +135,7 @@ function Works() {
               onClick={userIcon}
               htmlFor=""
               style={userData.phone.length > 0 ? { display: "none" } : null}
-              className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center smm:top-[16px] "
+              className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px] smm:left-[54px]  left-[12px] items-center smm:top-[16px] "
             >
               <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
               Телефон

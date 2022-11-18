@@ -19,7 +19,7 @@ function Home() {
       <Service />
       <Cards />
       <Accordion />
-      {/* <MoveSlider /> */}
+      <MoveSlider />
       {/* <Moving /> */}
       {/* <Move /> */}
       {/* <Footer /> */}

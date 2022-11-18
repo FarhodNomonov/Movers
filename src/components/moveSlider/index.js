@@ -14,7 +14,7 @@ function MoveSlider() {
   };
 
   return (
-    <div className="max-w-[1536px] h-max  mx-auto p-6 moveSlider sm:min-w-[610px] ">
+    <div className="max-w-[1536px] h-max  mx-auto p-6 moveSlider sm:min-w-[85vw] ">
       <div className="wrapper_title ml-6">
         <h2 className="title_pages text-[#28438E] my-3  mb-4 text-bold text-base font-bold font-Inter">
           ОТЗЫВЫ О НАШИХ ГРУЗЧИКАХ

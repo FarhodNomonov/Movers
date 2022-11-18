@@ -18,7 +18,7 @@ function Home() {
       <Works />
       <Service />
       <Cards />
-      {/* <Accordion /> */}
+      <Accordion />
       {/* <MoveSlider /> */}
       {/* <Moving /> */}
       {/* <Move /> */}

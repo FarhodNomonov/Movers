@@ -48,7 +48,7 @@ function Accordion() {
     console.log(openAccordion, index);
   };
   return (
-    <div className="max-w-[1536px] mx-auto p-12">
+    <div className="max-w-[1536px] mx-auto p-12 smm:p-4">
       <div className="relative wrapper_title md:mb-8   ">
         <h2 className="title_pages text-[#28438E] my-3 mb-4 text-bold text-base font-bold font-Inter">
           ОТВЕЧАЕМ НА ПОПУЛЯРНЫЕ ВОПРОСЫ
@@ -56,10 +56,10 @@ function Accordion() {
       </div>
       {accordion_data?.map((item, index) => (
         <React.Fragment key={index}>
-          <div className=" sm:min-w-[510px] ">
+          <div className=" sm:min-w-[85vw] mx-auto ">
             <div
               onClick={() => close(index)}
-              className="  mt-1  cursor-pointer  py-2 px-[53px] md:px-[13px] bg-[#0061cc1a] md:mt-2 text-white flex justify-between items-center"
+              className="mt-1  cursor-pointer  py-2 px-[53px] md:px-[13px] bg-[#0061cc1a] md:mt-2 text-white flex justify-between items-center"
             >
               <h3 className="text-[#2B2B2B] font-bold ">{item?.title}</h3>
               <span className="title_scg ">{item?.icon}</span>

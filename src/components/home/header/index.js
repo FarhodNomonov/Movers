@@ -4,7 +4,7 @@ import Logo from "../../../assets/images/Logo.png";
 
 function Header() {
   return (
-    <div className="header bg-[#28438E] sm:min-w-[610px]  p-1">
+    <div className="header bg-[#28438E] sm:min-w-[100vw]  p-1">
       <div className="max-w-[1536px]  mx-auto w-[95%] flex items-center justify-between">
         <div className="header_logo flex items-center ">
           <div className=" md:min-w-[60px] md:max-w-[60px]">
@@ -20,7 +20,7 @@ function Header() {
             </p>
           </div>
         </div>
-        <div className="header_technical_support flex items-center gap-14">
+        {/* <div className="header_technical_support flex items-center gap-14">
           <div className="header_connection flex items-center gap-3">
             <div className="header_connection_svg">
               <Tell />
@@ -47,7 +47,7 @@ function Header() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

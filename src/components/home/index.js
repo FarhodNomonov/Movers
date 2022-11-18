@@ -14,15 +14,15 @@ function Home() {
   return (
     <div>
       <Header />
-      <Intro />
-      <Works />
-      <Service />
-      <Cards />
-      <Accordion />
-      <MoveSlider />
-      <Moving />
-      <Move />
-      <Footer />
+      {/* <Intro /> */}
+      {/* <Works /> */}
+      {/* <Service /> */}
+      {/* <Cards /> */}
+      {/* <Accordion /> */}
+      {/* <MoveSlider /> */}
+      {/* <Moving /> */}
+      {/* <Move /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

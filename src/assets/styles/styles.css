@@ -56,6 +56,23 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28438E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0061CC;
+}
+
 @media (max-width: 768px) {
   .bg__for__header {
     background-image: url("../images/Vector.png");

@@ -20,6 +20,8 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
       smm: { max: "539px" },
       // => @media (max-width: 539px) { ... }
+      mdd: { max: "400px" },
+      // => @media (max-width: 539px) { ... }
     },
   },
   plugins: [],

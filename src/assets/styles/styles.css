@@ -62,4 +62,10 @@
     background-size: 500px;
   }
 }
- 
+
+@media (max-width: 539px) {
+  .bg__for__header {
+    background-image: url("../images/Vector.png");
+    background-size: 320px;
+  }
+}

@@ -29,7 +29,7 @@ function Works() {
   return (
     <div className=" max-w-[1536px] smm:w-[100%]  mx-auto bg__for__header">
       <div className="w-100 relative">
-        <h1 className="absolute top-5 left-5 md:text-4xl md:top-10 text-6xl font-bold text-white  ">
+        <h1 className="absolute top-5 left-5 md:text-4xl md:top-10 smm:top-5 text-6xl font-bold text-white  ">
           ПоРаботаем!
         </h1>
 
@@ -72,7 +72,7 @@ function Works() {
           </div>
         </div>
         {/*  */}
-        <div className="w-[200px] absolute hidden  md:block   pt-[220px] ml-[28%]">
+        <div className="w-[200px] absolute hidden  md:block smm:ml-[25%] smm:pt-[180px]  pt-[220px] ml-[28%]">
           <Slider {...settings}>
             <div className=" gap-4 ml-[10px]">
               <div className="w-[166px] rounded-[10px]  shadow shadow-2xl text-center flex items-center flex-col">
@@ -135,7 +135,7 @@ function Works() {
               onClick={userIcon}
               htmlFor=""
               style={userData.phone.length > 0 ? { display: "none" } : null}
-              className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center "
+              className="text-[#0061CC] flex  hover:cursor-text  absolute top-[12px]  left-[12px] items-center smm:top-[16px] "
             >
               <img src={call} className="w-[28px] h-[28px] mr-[4px]" alt="" />
               Телефон

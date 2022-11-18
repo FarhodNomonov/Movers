@@ -15,7 +15,7 @@ function Home() {
     <div>
       <Header />
       <Intro />
-      {/* <Works /> */}
+      <Works />
       {/* <Service /> */}
       {/* <Cards /> */}
       {/* <Accordion /> */}

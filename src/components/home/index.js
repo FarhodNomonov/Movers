@@ -20,7 +20,7 @@ function Home() {
       <Cards />
       <Accordion />
       <MoveSlider />
-      {/* <Moving /> */}
+      <Moving />
       {/* <Move /> */}
       {/* <Footer /> */}
     </div>

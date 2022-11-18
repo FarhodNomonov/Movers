@@ -22,10 +22,10 @@ function Moving() {
     }));
   };
   return (
-    <div className="w-full md:h-max p-12 sm:min-w-[610px] relative bg-[#28438E]">
+    <div className="w-full md:h-max p-12 sm:min-w-[85vw] smm:px-4 relative bg-[#28438E]">
       <div className="max-w-[1536px] relative md:flex-col mx-auto flex ">
         <div className="h-max w-[70%] md:w-full xl:flex-col xl:flex lg:w-full">
-          <h1 className="text-5xl w-full font-extrabold text-white text-bold ">
+          <h1 className="text-5xl smm:text-3xl w-full font-extrabold text-white text-bold ">
             Рассчитаем стоимость услуг грузчиков в Москве
           </h1>
           <div className="flex gap-5 lg:flex lg:flex lg:flex-col   mt-4 md:flex-col">

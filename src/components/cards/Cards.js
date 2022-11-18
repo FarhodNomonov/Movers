@@ -13,42 +13,42 @@ const Cards = () => {
             НАШИ УСЛУГИ
           </h2>
         </div>
-        <div className=" flex flex-wrap  sm:w-[600px] justify-around  mx-auto   ">
-          <div className=" w-[300px] min-w-[300px] mx-auto sm:w-[500px] sm:min-w-[500px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
+        <div className=" flex flex-wrap  sm:w-full justify-around  mx-auto   ">
+          <div className=" w-[300px]   mx-auto sm:w-[500px] smm:w-[300px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
             <h1 className="font-bold md:text-lg">ГРУЗЧИКИ</h1>
-            <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] sm:h-[150px] top-20 rounded-[5px]">
+            <div className=" w-52 bg-blue-700 h-32 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] smm:left-8 smm:w-[220px] sm:h-[150px] top-20 rounded-[5px]">
               <img
-                className="skew-x-6 relative left-20 w-100 h-30 -top-6 sm:h-60"
+                className="skew-x-6 relative left-20 w-100 h-30 -top-6 smm:top-0 smm:left-12"
                 src={img4}
                 alt=""
               />
             </div>
           </div>
-          <div className=" w-[300px] min-w-[300px] mx-auto sm:w-[500px] sm:min-w-[500px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
+          <div className=" w-[300px]   mx-auto sm:w-[500px] smm:w-[300px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
             <h1 className="font-bold md:text-lg">ФИЗИЧЕСКИМ ЛИЦАМ</h1>
-            <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] sm:h-[150px] top-20 rounded-[5px]">
+            <div className=" w-52 bg-blue-700 h-32 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] smm:left-8 smm:w-[220px] sm:h-[150px] top-20 rounded-[5px]">
               <img
-                className="skew-x-6 relative left-20 w-100 h-30 sm:ml-20 -top-6 sm:h-60"
+                className="skew-x-6 relative left-20 w-100 h-30 sm:ml-20 smm:left-5 -top-6 sm:h-60"
                 src={img1}
                 alt=""
               />
             </div>
           </div>
-          <div className="w-[300px] min-w-[300px] mx-auto sm:w-[500px] sm:min-w-[500px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
+          <div className="w-[300px]   mx-auto sm:w-[500px] smm:w-[300px] my-4 h-[253px] sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
             <h1 className="font-bold md:text-lg">ЮРИДИЧЕСКИМ ЛИЦАМ</h1>
-            <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] sm:h-[150px] top-20 rounded-[5px]">
+            <div className=" w-52 bg-blue-700 h-32 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] smm:left-8 smm:w-[220px] sm:h-[150px] top-20 rounded-[5px]">
               <img
-                className="skew-x-6 relative left-20 w-100 sm:ml-20 h-30 -top-6 sm:h-60"
+                className="skew-x-6 relative left-20 w-100 sm:ml-20 h-30 smm:left-5 -top-6 sm:h-60"
                 src={img2}
                 alt=""
               />
             </div>
           </div>
-          <div className=" w-[300px] min-w-[300px] mx-auto sm:w-[500px] sm:min-w-[500px] my-4 h-60 sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
+          <div className=" w-[300px]   mx-auto sm:w-[500px] smm:w-[300px] my-4 h-60 sm:h-[320px] flex rounded-[5px] relative p-8 hover:bg-[#0061cc1a] cursor-pointer shadow-2xl -shadow-gray-200">
             <h1 className="font-bold md:text-lg">АВТОПАРК</h1>
-            <div className=" w-40 bg-blue-700 h-20 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] sm:h-[150px] top-20 rounded-[5px]">
+            <div className=" w-52 bg-blue-700 h-32 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] smm:left-8 smm:w-[220px] sm:h-[150px] top-20 rounded-[5px]">
               <img
-                className="skew-x-6 relative left-20 w-100 h-30 -top-6 sm:h-60"
+                className="skew-x-6 relative left-20 w-100 h-30 -top-6 smm:top-5  smm:left-10"
                 src={img3}
                 alt=""
               />

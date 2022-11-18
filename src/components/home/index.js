@@ -17,7 +17,7 @@ function Home() {
       <Intro />
       <Works />
       <Service />
-      {/* <Cards /> */}
+      <Cards />
       {/* <Accordion /> */}
       {/* <MoveSlider /> */}
       {/* <Moving /> */}

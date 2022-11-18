@@ -113,7 +113,7 @@ function Works() {
           </Slider>
         </div>
         {/*  */}
-        <div className=" top-[480px] left-[110px] smm:w-[90%] smm:mx-auto smm:items-center absolute  smm:left-[5%] justify-center smm:relative ">
+        <div className=" top-[480px] left-[110px] smm:w-[90%] smm:mx-auto smm:items-center absolute  smm:left-[8%] justify-center smm:relative ">
           <div className="wrapper_title">
             <h2 className="title_pages text-[#28438E] my-3 mb-4 text-bold text-base font-bold font-Inter">
               ОСТАЛИСЬ ВОПРОСЫ?

@@ -21,7 +21,7 @@ function Home() {
       <Accordion />
       <MoveSlider />
       <Moving />
-      {/* <Move /> */}
+      <Move />
       {/* <Footer /> */}
     </div>
   );

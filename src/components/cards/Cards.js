@@ -48,7 +48,7 @@ const Cards = () => {
             <h1 className="font-bold md:text-lg">АВТОПАРК</h1>
             <div className=" w-52 bg-blue-700 h-32 -skew-x-6 absolute left-10 top-24 sm:top-[100px] sm:left-[80px] sm:w-[350px] smm:left-8 smm:w-[220px] sm:h-[150px] top-20 rounded-[5px]">
               <img
-                className="skew-x-6 relative left-20 w-100 h-30 -top-6 smm:top-5  smm:left-10"
+                className="skew-x-6 relative left-10  w-100 h-30 -top-6 smm:top-5  smm:left-10"
                 src={img3}
                 alt=""
               />

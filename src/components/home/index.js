@@ -22,7 +22,7 @@ function Home() {
       <MoveSlider />
       <Moving />
       <Move />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

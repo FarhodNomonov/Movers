@@ -20,7 +20,7 @@ function Header() {
             </p>
           </div>
         </div>
-        {/* <div className="header_technical_support flex items-center gap-14">
+        <div className="header_technical_support flex items-center gap-14">
           <div className="header_connection flex items-center gap-3">
             <div className="header_connection_svg">
               <Tell />
@@ -47,7 +47,7 @@ function Header() {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

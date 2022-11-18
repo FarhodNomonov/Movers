@@ -13,7 +13,7 @@ import Footer from "../footer/Footer";
 function Home() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Intro />
       <Works />
       <Service />
